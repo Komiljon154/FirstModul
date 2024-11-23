@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|d:\\projects\\firstmodul\\consoleapp1\\consoleapp1\\services\\studentservicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|D:\\Projects\\FirstModul\\ConsoleApp1\\consoleapp1\\services\\studentservicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\services\\studentservicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|d:\\projects\\firstmodul\\consoleapp1\\consoleapp1\\services\\carservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|D:\\Projects\\FirstModul\\ConsoleApp1\\consoleapp1\\services\\carservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\services\\carservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|d:\\projects\\firstmodul\\consoleapp1\\consoleapp1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|D:\\Projects\\FirstModul\\ConsoleApp1\\consoleapp1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|d:\\projects\\firstmodul\\consoleapp1\\consoleapp1\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|D:\\Projects\\FirstModul\\ConsoleApp1\\consoleapp1\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26B227CC-DB14-47D1-9219-BEA2183D5AE7}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,8 +46,7 @@
               "RelativeToolTip": "ConsoleApp1\\Services\\StudentServicas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:19:16.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T02:19:16.338Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "ConsoleApp1\\Services\\CarServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:18:57.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T02:18:57.076Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "ConsoleApp1\\Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:17:36.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T02:17:36.322Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "ConsoleApp1\\Models\\Car.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:17:06.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T02:17:06.077Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "D:\\Projects\\FirstModul\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T02:14:01.712Z",
               "EditorCaption": ""

@@ -73,17 +73,17 @@ internal class CarService
         {
             CarId = Guid.NewGuid(),
             CarType = "chaevrolet",
-            CarName = "Malibu",
+            CarName = "Damas",
             CarColor = "oq",
-            CarPrice = 19000,
+            CarPrice = 93000000,
         };
         var secondCar = new Car()
         {
             CarId = Guid.NewGuid(),
             CarType = "chaevrolet",
-            CarName = "Spark",
-            CarColor = "mokriy",
-            CarPrice = 9000,
+            CarName = "Cobalt",
+            CarColor = "Qora",
+            CarPrice = 153000000,
         };
 
         cars.Add(firstCar);

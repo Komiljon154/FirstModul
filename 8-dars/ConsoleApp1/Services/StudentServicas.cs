@@ -73,23 +73,23 @@ internal class StudentServices
         var firstStudent = new Student()
         {
             StudentId = Guid.NewGuid(),
-            StudentName = "Suxrob",
-            StudentAge = 19,
-            StudentPhoneNumber = "+998971070052",
+            StudentName = "Komil",
+            StudentAge = 20,
+            StudentPhoneNumber = "+998576412859",
         };
         var secondStudent = new Student()
         {
             StudentId = Guid.NewGuid(),
-            StudentName = "Davron",
-            StudentAge = 20,
-            StudentPhoneNumber = "+998950805001",
+            StudentName = "Umid",
+            StudentAge = 30,
+            StudentPhoneNumber = "+998944895876",
         };
         var thirdStudent = new Student()
         {
             StudentId = Guid.NewGuid(),
-            StudentName = "Murod",
-            StudentAge = 22,
-            StudentPhoneNumber = "+998997210031",
+            StudentName = "Amin",
+            StudentAge = 25,
+            StudentPhoneNumber = "+998524865971",
         };
 
         students.Add(firstStudent);
