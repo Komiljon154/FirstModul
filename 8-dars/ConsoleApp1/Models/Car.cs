@@ -12,5 +12,4 @@ public class Car
 
     public int CarPrice { get; set; }
 
-
 }
