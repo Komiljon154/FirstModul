@@ -1,187 +1,114 @@
-﻿using System.Collections.Generic;
+﻿using Lesson9_CRUD_posts.Models;
+using System.Collections.Generic;
 using System;
-using System.Xml.Linq;
-
-
 
 public class EventService
 {
-    private List<Event> ListedEvents;
-
+    private List<Event> events;
     public EventService()
     {
-        ListedEvents = new List<Event>();
-        DataSeed();
+        events = new List<Event>();
     }
-
-
-    public Event AddedEvent(Event addingEvent)
+    public Event AddEvent(Event addingEvent)
     {
         addingEvent.Id = Guid.NewGuid();
-        ListedEvents.Add(addingEvent);
+        events.Add(addingEvent);
         return addingEvent;
     }
 
-
-    public Event GetByID(Guid eventID)
+    public Event GetById(Guid eventId)
     {
-        foreach (var check in ListedEvents)
+        foreach (var evenT in events)
         {
-            if (check.Id == eventID)
+            if (evenT.Id == eventId)
             {
-                return check;
+                return evenT;
             }
         }
+
         return null;
     }
 
 
-    public bool DeletedEvent(Guid eventID)
-    {
-        var removingEvent = GetByID(eventID);
 
-        if (removingEvent is null)
+    public bool DeleteEvent(Guid eventId)
+    {
+        bool exists = false;
+        foreach (var evenT in events)
         {
-            return false;
+            if (evenT.Id == eventId)
+            {
+                events.Remove(evenT);
+                exists = true;
+                break;
+            }
         }
-
-        ListedEvents.Remove(removingEvent);
-        return true;
+        return exists;
     }
-
-
-    public bool UpdatedEvent(Guid eventId, Event newEvent)
+    public bool UpdateEvent(Event updateEvent)
     {
-        var checkEvent = GetByID(eventId);
-
-        if (checkEvent is null)
+        bool exists = false;
+        for (var i = 0; i < events.Count; i++)
         {
-            return false;
+            if (events[i].Id == updateEvent.Id)
+            {
+                events[i] = updateEvent;
+                exists = true;
+                break;
+            }
         }
-
-        ListedEvents[ListedEvents.IndexOf(checkEvent)] = newEvent;
-        return true;
+        return exists;
     }
-
-
-    public List<Event> GetAllEvents()
+    public bool AddPersonToEvent(Guid idPost, string name)
     {
-        return ListedEvents;
+        foreach (var evenT in events)
+        {
+            if (evenT.Id == idPost)
+            {
+                evenT.Attends.Add(name);
+                return true;
+            }
+        }
+        return false;
     }
-
-
-
-   
-
-
-
+    public Guid GetMaxTaggedEvent()
+    {
+        var count = 0;
+        var result = new Event();
+        foreach (var evenT in events)
+        {
+            if (evenT.Tags.Count > count)
+            {
+                count = evenT.Tags.Count;
+            }
+        }
+        foreach (var evenT in events)
+        {
+            if (count == evenT.Tags.Count)
+            {
+                result = evenT;
+            }
+        }
+        return result.Id;
+    }
     public List<Event> GetEventsByLocation(string location)
     {
         var collectEvents = new List<Event>();
 
-        foreach (var eveent in ListedEvents)
+        foreach (var evenT in events)
         {
-            if (eveent.Location == location)
+            if (evenT.Location == location)
             {
-                collectEvents.Add(eveent);
+                collectEvents.Add(evenT);
             }
         }
         return collectEvents;
     }
 
 
-
-    public Event GetPopularEvent()
+    public List<Event> GetAllEvent()
     {
-        var maxAmount = 0;
-        var responceEvent = new Event();
-
-        foreach (var eveent in ListedEvents)
-        {
-            if (eveent.AttendenceMembers.Count > maxAmount)
-            {
-                maxAmount = eveent.AttendenceMembers.Count;
-                responceEvent = eveent;
-            }
-        }
-        return responceEvent;
-    }
-
-
-
-    public Event GetMaxTaggedEvent()
-    {
-        var maxAmount = 0;
-        var responceEvent = new Event();
-
-        foreach (var eveent in ListedEvents)
-        {
-            if (eveent.Tags.Count > maxAmount)
-            {
-                maxAmount = eveent.Tags.Count;
-                responceEvent = eveent;
-            }
-        }
-        return responceEvent;
-    }
-
-
-    public void DataSeed()
-    {
-
-        var firstMember = new List<string>();
-        firstMember.Add("Komiljon,");
-        firstMember.Add("Aziz,");
-        firstMember.Add("Lola,");
-        firstMember.Add("Behruz,");
-        firstMember.Add("Dilnoza,");
-        firstMember.Add("Umid,");
-        firstMember.Add("Ubaydullo.");
-
-        var firstTagList = new List<string>();
-        firstTagList.Add("Dam olishga bordik,");
-        firstTagList.Add("Futbol o'ynadik,");
-        firstTagList.Add("Yig'ilib dars qildik");
-
-
-        var firstEvent = new Event()
-        {
-            Id = Guid.NewGuid(),
-            Name = "Tug'ulgan kun",
-            Location = "Chorsu",
-            Date = DateTime.Now,
-            Description = "Tug'ulgan kunga hamma keldi",
-            AttendenceMembers = firstMember,
-            Tags = firstTagList,
-        };
-
-
-        var secondMember = new List<string>();
-        secondMember.Add("Kamoliddin,");
-        secondMember.Add("Shahobiddin,");
-        secondMember.Add("Mubina,");
-        secondMember.Add("Daler,");
-        secondMember.Add("Dovud,");
-        
-
-        var secondTagList = new List<string>();
-        secondTagList.Add("Sayohat qildik,");
-        secondTagList.Add("Dam oldik,");
-        secondTagList.Add("Tadbirga bordik");
-
-
-        var secondEvent = new Event()
-        {
-            Id = Guid.NewGuid(),
-            Name = "Tug'ulgan Kun",
-            Location = "Sergili",
-            Date = DateTime.Now,
-            Description = "Zo'r bo'ldi",
-            AttendenceMembers = secondMember,
-            Tags = secondTagList,
-        };
-
-        ListedEvents.Add(firstEvent);
-        ListedEvents.Add(secondEvent);
+        return events;
     }
 }
+
