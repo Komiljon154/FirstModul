@@ -80,7 +80,29 @@ namespace _10_dars_CRUD.Services
             }
             return mostpageBook;
         }
-
-
+        public List<Book> GetBooksByReaderName(string readerName)
+        {
+            var booksByReaderName = new List<Book>();
+            foreach(var bookDb in books)
+            {
+                if (bookDb.ReadersName == readerName)
+                {
+                    booksByReaderName.Add(bookDb);
+                }
+            }
+            return booksByReaderName;
+        }
+        public List<Book> GetBooksByAuthorName(string authorName)
+        {
+            var booksByAuthName = new List<Book>();
+            foreach (var bookAuthorDb in books)
+            {
+                if (bookAuthorDb.AuthersName == authorName)
+                {
+                    booksByAuthName .Add(bookAuthorDb);
+                }
+            }
+            return booksByAuthName;
+        }
     }
 }
